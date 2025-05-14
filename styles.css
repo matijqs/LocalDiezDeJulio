@@ -1,0 +1,175 @@
+body {
+    background: #414141;
+    color: #fff8dc; /* Amarillo claro */
+    font-family: Arial, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('files/Fondo.jpeg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    opacity: 0.08;
+    z-index: -1;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 235, 59, 0.1); /* Amarillo translúcido */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 223, 0, 0.4);
+    max-width: 200px;
+    height: auto;
+}
+
+.container {
+    padding: 40px;
+    border-radius: 10px;
+    background: #414141;
+    box-shadow: 0 0 20px rgba(255, 223, 0, 0.15);
+}
+
+h1 {
+    color: #ffeb3b;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+.lead, .form-label, .form-group {
+    color: #000000;
+}
+
+.form-control {
+    background-color: #0f0f0f;
+    color: #fff;
+    border: 1px solid #d1a100;
+}
+
+.form-control:focus {
+    background-color: #1a1a1a;
+    color: #fff;
+    border-color: #d1a100;
+}
+
+.form-control::placeholder {
+    color: #d1a100;
+}
+
+.btn-primary,
+.btn-success {
+    background-color: #d1a100;
+    border-color: #d1a100;
+    color: #000;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+    background-color: #d1a100;
+    border-color: #d1a100;
+    color: #000;
+}
+
+#copyButton:focus, #copyButton:active,
+#copySelectedButton, #copySelectedButton:active {
+    background-color: #d1a100;
+    border-color: #d1a100;
+    outline: none;
+    color: #000;
+}
+
+.alert {
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1.1rem;
+    background-color: #1a1a1a;
+    color: #fff8dc;
+}
+
+.alert-info {
+    border-left: 5px solid #d1a100;
+}
+
+.alert-warning {
+    background-color: #d1a100;
+    color: #212121;
+    border-left: 5px solid #d1a100;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.alert-warning::before {
+    content: "⚠️";
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+a {
+    color: #d1a100;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #d1a100;
+    text-decoration: underline;
+}
+
+#scrollButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d1a100;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 2px 2px 10px rgba(255, 235, 59, 0.3);
+    z-index: 1000;
+    opacity: 0.9;
+}
+
+#scrollButton:hover {
+    background-color: #d1a100;
+    opacity: 1;
+}
+
+.enlaces-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.enlaces-container a {
+    background-color: rgba(255, 235, 59, 0.1);
+    color: #d1a100;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.enlaces-container a:hover {
+    background-color: rgba(255, 235, 59, 0.3);
+    color: #d1a100;
+}
